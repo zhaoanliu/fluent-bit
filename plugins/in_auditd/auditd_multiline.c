@@ -66,7 +66,7 @@ int flb_auditd_mult_create(struct flb_auditd_config *ctx,
     /* Create firstline parser */
     const char *str_regex = "^(?<log>type=\\S+\\smsg=audit\\(\\d+.\\d+:\\d+\\):.*)";
     parser = flb_parser_create("auditd_log_parser_head_f3c55c1c-e917-446b-8b47-42327b647c69", "regex", str_regex,
-                               NULL, NULL, NULL, MK_FALSE, NULL, 0,
+                               NULL, NULL, NULL, MK_FALSE, MK_TRUE, NULL, 0,
                                NULL, config);
 
     if (!parser) {
