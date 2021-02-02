@@ -14,6 +14,7 @@ set(FLB_HTTP_SERVER            No)
 
 # INPUT plugins
 # =============
+set(FLB_IN_AUDITD              No)
 set(FLB_IN_CPU                 No)
 set(FLB_IN_DISK                No)
 set(FLB_IN_EXEC                No)
